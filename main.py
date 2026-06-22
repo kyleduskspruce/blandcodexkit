@@ -1,7 +1,7 @@
-"""compiler_2a879e - File utility."""
+"""compiler_199f41 - File utility."""
 import os, sys
 from pathlib import Path
-APP_TAG = "compiler_2a879e"
+APP_TAG = "compiler_199f41"
 def scan_directory(path: str = ".") -> list:
     entries = []
     for entry in Path(path).iterdir():
